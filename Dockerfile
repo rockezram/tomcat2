@@ -1,4 +1,4 @@
 FROM tomcat:latest
-RUN mkdir -p /user/local/tomcat/webapps/ROOT/
-WORKDIR /user/local/tomcat/webapps/ROOT/
+RUN mkdir -p /usr/local/tomcat/webapps/ROOT/
+WORKDIR /usr/local/tomcat/webapps/ROOT/
 ADD index.html .
