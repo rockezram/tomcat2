@@ -3,7 +3,7 @@ node ('master')
         stage('code heckout')
         {
             checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/rockezram/tomcat2.git']]])
-        }
+         }
         stage ('docker build')
         {
             sh' docker build -t devpracticep/dev:tomcat1hellowoeld .'
